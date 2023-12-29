@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-eqiv="X-VA-compatible" content="IE=Rdge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>instagram page</title>
+<link rel="stylesheet" href="linkbutton.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+<style>
+    
+	  .insta{
+	      margin-left:15rem;
+	      border:1px solid black;
+		  width:20rem;
+		  height:30rem;
+	  }
+	  .space{
+	      margin-top:20rem;
+		  display:flex;
+		  gap:2rem;
+	  }
+	 
+  
+</style>
+</head>
+<body>
+     <div class='insta'>
+       <div>
+	       <h2><i>Instagram<i></h2>
+		   
+	   </div>
+	   <div id='images'>
+	   
+	   </div>
+	 <div class='space'>  
+	   <div>
+	      
+		  <input type="file" id="select">
+		  <button type='submit' id='buttons'>post</button>
+		  
+	   </div>
+	   <div>
+	   
+	   </div>
+	  </div>
+	</div>  
+<script>
+    
+   
+    let image1=document.getElementById("select")
+    let button=document.getElementById("buttons")
+	let im=document.getElementById("images")
+	
+	   button.addEventListener("click",()=>{
+	   
+	   
+	     let ima=document.createElement('img')
+		 ima.setAttribute("id","source")
+		
+		 ima.setAttribute("src",URL.createObjectURL(image1.files[0]));
+		 im.appendChild(ima)
+
+	   	   console.log(ima);
+	       
+		
+	   })
+
+	   
+</script>
+</body>
+</html> 
+
+
+
+
+

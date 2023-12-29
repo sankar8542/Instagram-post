@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-eqiv="X-VA-compatible" content="IE=Rdge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>instagram page</title>
+<link rel="stylesheet" href="linkbutton.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+<style>
+     .whole{
+	     display:flex;
+		  align-items:center;
+		  background-color:#d98cd9;
+		  
+	 }
+    .home{
+	    margin-top:10rem;
+	    margin-left:10rem;
+		text-align:center;
+		border:1px solid black;
+		width:20rem;
+		height:20rem;
+		padding:2rem;
+		background-color:#cccccc;
+	}
+	.home button{
+	      padding:10px;
+		  background-color:#ff0066;
+		  border-radius:1rem;
+	    
+	}
+</style>
+</head>
+<body>
+    <div class='whole'>
+     <div>
+	     <img src='instagram.jpg' width='400' height='300'>
+	  </div>
+   <div class='home'>
+         <form action="empty.html" onsubmit="return(validation())">
+		 <h2><i>Instagram<i></h2>
+		 <input class="page" id="user"type="text" placeholder="username"><br><br>
+		 <input class="page1" id="pass" type="password" placeholder="password"><br><br>
+		 <button type="submit"><b>login<b></button>
+		 <h2>------<i>OR<i>-------</h2>
+		 <h2>Login with Facebook</h2>
+		 </form>
+	  
+	</div>	
+	</div>
+	  
+<script>
+    function validation(a){
+	  <!-- a.preventDefault(); -->
+var username = document.getElementById("user").value ;
+var password=document.getElementById("pass").value ;
+ 
+ if(username=="" && password==""){
+ alert("fill your username");
+ return false
+ }
+ else if(password.length<8){
+  alert("fill your password");
+ return false
+ }
+return true
+   
+ }	 
+ 
+	   
+</script>
+</body>
+</html> 
